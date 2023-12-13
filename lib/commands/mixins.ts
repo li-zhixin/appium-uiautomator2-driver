@@ -105,6 +105,7 @@ export type UIA2GeneralMixin = UIA2Mixin<
   mobileType(opts: types.TypingOptions): Promise<boolean>;
   mobileInstallMultipleApks(opts: types.InstallMultipleApksOptions): Promise<void>;
   mobileBackgroundApp(opts?: types.BackgroundAppOptions): Promise<void>;
+  executeCdp(cmd: string, params: unknown): Promise<unknown>;
 };
 
 export type UIA2ViewportMixin = UIA2Mixin & {
