@@ -8,4 +8,10 @@ export const newMethodMap = {
       payloadParams: {optional: ['contentType']},
     },
   },
+  '/session/:sessionId/appium/cdp/execute': {
+    POST: {
+      command: 'executeCdp',
+      payloadParams: {required: ["cmd", "params"]},
+    },
+  },
 } as const;

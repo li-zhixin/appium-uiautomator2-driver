@@ -111,6 +111,7 @@ import {
   openNotifications,
   suspendChromedriverProxy,
   mobileGetDeviceInfo,
+  executeCdp,
 } from './commands/misc';
 import {
   setUrl,
@@ -1010,6 +1011,7 @@ class AndroidUiautomator2Driver
 
   mobileInstallMultipleApks = mobileInstallMultipleApks;
   mobileBackgroundApp = mobileBackgroundApp;
+  executeCdp = executeCdp;
 
   mobileGetBatteryInfo = mobileGetBatteryInfo;
 
